@@ -1,0 +1,37 @@
+
+<title>Vertical Split Screen</title>
+
+
+<body>
+  <div class="container">
+<div class="left-side">
+  <img src="https://app.dubbpie.com/assets/images/login-img.png">
+</div>
+<div class="right-side">
+
+  <div class="formcontainer">
+
+    <form #userform="ngForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label>Username:&nbsp;&nbsp;&nbsp;</label>
+      <input type="text" required #username="ngModel" name="username"  class="form-control" [class.is-invalid]="username.invalid && username.touched" [(ngModel)]="loginModel.username">
+    </div><br>
+
+
+    <div class="form-group">
+      <label>Password:&nbsp;&nbsp;&nbsp;</label>
+      <input type="password" required #password="ngModel" name="password" class="form-control" [class.is-invalid]="username.invalid && username.touched" [(ngModel)]="loginModel.password">
+    </div><br>
+
+    <div class="submitbtn">
+      <button type="submit" class="btn btn-secondary">submit</button>
+    </div><br>
+
+    <p>Don't have an account <a href="/signup">&nbsp;sign up</a></p>
+    
+  </form>
+  </div>
+</div>
+</div>
+</body>
+

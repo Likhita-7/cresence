@@ -1,0 +1,44 @@
+
+.mainheading{
+   
+    font-style: normal;
+    color:black;
+    font-weight: 700;
+    font-size: 150%;
+    padding-left: 100px;
+
+    
+}
+.maincontent{
+font-style: normal;
+color:black;
+padding-left: 100px;
+padding-right: 100px;
+}
+.subheading{
+padding-left: 100px;
+}
+
+.endbuttons {
+text-align: center; /* Center-align the buttons */
+margin-top: 20px; /* Add some space above the buttons */
+}
+
+.endbuttons nav button {
+padding: 10px 20px; /* Add padding to the buttons */
+margin: 0 10px; /* Add margin between the buttons */
+background-color: #0e5f11; /* Green background color */
+color: white; /* White text color */
+border: none; /* Remove button borders */
+border-radius: 5px; /* Add rounded corners */
+cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.endbuttons nav button:hover {
+background-color: #1b5f1e; /* Darker green color on hover */
+}
+
+.mainimg{
+padding-left: 100px;
+width: 100%;
+}

@@ -1,0 +1,15 @@
+.carousel-item img {
+    height: 500px; /* Adjust the height of the images */
+    object-fit: cover; /* Ensure the images cover the entire slide */
+   
+  }
+
+  /* Style for carousel control icons */
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Change the color */
+  }
+
+  /* Style for carousel control buttons */
+  .carousel-control-prev, .carousel-control-next {
+    width: 5%; /* Adjust the width */
+  }

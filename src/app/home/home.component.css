@@ -1,0 +1,24 @@
+.mainheading{
+    font-style: normal;
+    color:black;
+    font-weight: 700;
+    font-size: 150%;
+    padding-left: 100px;
+    
+}
+
+.maincontent{
+    font-style: normal;
+    color:black;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.subheading{
+    padding-left: 100px;
+}
+
+ul{
+    padding-left: 100px;
+    padding-right: 200px;
+}
+

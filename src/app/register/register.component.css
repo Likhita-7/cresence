@@ -1,0 +1,91 @@
+.mainheading{
+   
+    font-style: normal;
+    color:black;
+    font-weight: 700;
+    font-size: 150%;
+    padding-left: 40%;
+
+    
+}
+
+.mainform {
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Horizontally center the items */
+    align-items: center; /* Vertically center the items */
+    /* Adjust the height as needed */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .button{
+    align-items: center;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    margin: 0;
+  }
+  form {
+    width: 300px; /* Adjust the form width as needed */
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button.btn {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button.btn:hover {
+      background-color: #606870;
+    }
+
+    .form-check {
+      margin-bottom: 10px;
+    }
+
+    .form-check input {
+      margin-right: 5px;
+    }

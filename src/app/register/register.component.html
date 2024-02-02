@@ -1,0 +1,42 @@
+<br><div class="mainheading">
+    <p>&nbsp;&nbsp;&nbsp;Registration Form</p>
+</div>
+<div class="mainform">
+    <form #userform="ngForm" (ngSubmit)="onSubmit()" >
+        <div class="form-group">
+            <label><b>Name:</b></label>
+            <input type="text" required  #name="ngModel" name="username" class="form-control" [class.is-invalid]="name.invalid && name.touched" [(ngModel)]="userModel.name">
+        </div>
+
+        <div class="form-group">
+            <label><b>Phone number:</b></label>
+            <input type="tel" class="form-control" #phone="ngModel" pattern="^[0-9]{10,14}$" [class.is-invalid]="phone.invalid && phone.touched" [(ngModel)]="userModel.phone" name="phone">
+        </div>
+
+        <div class="form-group">
+            <label><b>Email:</b></label>
+            <input type="email" class="form-control" #email="ngModel" [(ngModel)]="userModel.email" name="email">
+        </div>
+
+        <div class="form-group">
+            <label><b>Event:</b></label>
+            <select required #event="ngModel" [class.is-invalid]="event.invalid && event.touched" class="form-control" class="custom-select" [(ngModel)]="userModel.event" name="event">
+                <option *ngFor="let event of events">{{event}}</option>
+
+            </select>
+        </div>
+
+        <div>
+
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button *ngIf="userid"  class="btn btn-secondary" type="button" (click)="updateUser(userModel)" >update</button><br><br>
+
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button *ngIf="!userid" type="submit" class="btn btn-secondary" >submit</button><br>
+
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button *ngIf="!userid"  class="btn btn-secondary" (click)="next($event)" >View participants</button><br>
+           
+        </div>
+    </form><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div><br><br>

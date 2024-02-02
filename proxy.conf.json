@@ -1,0 +1,6 @@
+{
+    "/cre/": {
+        "target": "http://localhost:8082"
+        
+    }
+}
